@@ -1,0 +1,58 @@
+body {
+  background-image: url(../images/background-image3.svg);
+  background-size: contain;
+}
+
+#content-body {
+  background-color: transparent;
+  border: transparent;
+  backdrop-filter: blur(0px);
+}
+
+.grid-container {
+  margin: auto;
+  justify-content: space-around;
+  padding-top: 4em;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 20px;
+  height: 17em;
+}
+
+.image {
+  width: 7em;
+  height: 5em;
+  margin: 50px;
+  margin-bottom: 110px;
+}
+
+.grid-item {
+  border-radius: 15px;
+  width: 14em;
+  height: 18em;
+}
+
+.heading-space {
+  margin-top: 0;
+  /* padding-top: 3px; */
+}
+
+.labels {
+  padding-top: 80em;
+  padding-left: 10px;
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.label-white {
+  color: white;
+}
+
+.item1,
+.item2,
+.item3 {
+  background-image: linear-gradient(135deg, #3b5667, #2c3d48);
+}
+
+.item4 {
+  background-image: linear-gradient(135deg, #d81b24, #1a3751);
+}

@@ -1,0 +1,84 @@
+body {
+  background-image: url(../images/background-image2.svg);
+}
+
+#content-body {
+  width: 65%;
+  margin-top: 27%;
+}
+
+.floating-item {
+  position: absolute;
+  color: white;
+  pointer-events: none;
+  top: 27px;
+  left: 226px;
+  transition: 0.2s ease all;
+}
+
+input:focus ~ .floating-item,
+input:not(:focus):valid ~ .floating-item {
+  top: 12px;
+  bottom: 10px;
+  font-size: 11px;
+  opacity: 1;
+  padding-bottom: 0;
+}
+
+div input:focus,
+div input:not(:focus):valid {
+  padding-bottom: 1px;
+  height: calc(20px + 5px);
+}
+
+.text-field {
+  position: relative;
+}
+
+.text {
+  color: white;
+  text-align: left;
+  background: url(../images/icons/question.svg) no-repeat 16.5em 0.5em;
+  padding: 10px 40px 10px 20px;
+  width: 30%;
+  border: 1px white groove;
+}
+
+/* 
+.submitBtn {
+  background: linear-gradient(to bottom, #f80705, #7b1e1d);
+  border: none;
+  color: white;
+  width: 38%;
+  margin: auto;
+} */
+
+.inputWrapper {
+  width: 300px;
+  height: 45px;
+  border: 1px solid #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.input {
+  outline: none;
+  border: none;
+  background-color: red;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.button {
+  background-color: transparent;
+  border: transparent;
+}
+
+.button {
+  cursor: pointer;
+}
