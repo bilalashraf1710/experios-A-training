@@ -1,5 +1,5 @@
 html {
-  background-image: url(../images/background-image4.svg);
+  background-image: url(../images/backgrounds/start.svg);
 }
 
 body {
@@ -40,7 +40,6 @@ body {
 }
 
 .item-image {
-  color: white;
   float: left;
   padding-left: 2.5%;
   padding-right: 2%;
@@ -50,6 +49,11 @@ body {
 .item-content {
   color: white;
   float: left;
+}
+
+.float-container:after {
+  content: "";
+  clear: left;
 }
 
 .big-text {
@@ -92,13 +96,13 @@ div.ready > p {
   height: 100px;
 }
 
-.buttons {
+/* .buttons {
   margin: auto;
-}
+} */
 
 .ready-btn {
   width: 33%;
-  /* margin: auto; */
+  margin: auto;
   margin-bottom: 10px;
   color: white;
   background-image: linear-gradient(to bottom, #b4ec51, #377b1b);
@@ -107,7 +111,7 @@ div.ready > p {
 
 .investigate-btn {
   width: 33%;
-  /* margin: auto; */
+  margin: auto;
   color: rgb(255, 255, 255, 0.5);
   background-color: #1f3e51;
   border: transparent;
