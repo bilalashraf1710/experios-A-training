@@ -1,29 +1,9 @@
 @charset "UTF-8";
 @import "main.css";
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); */
 
 body {
   background: none;
-  /* width: 100%;
-  height: 100%; */
 }
-
-/* .image-bg {
-  display: absolute;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: 2px solid black;
-  background-color: black;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  z-index: -1;
-}
-.bg {
-  width: 100%;
-  height: 100%;
-} */
 
 #root {
   position: fixed;
@@ -177,57 +157,53 @@ button.submitBtn1 img {
     font-size: 11px;
   }
 }
+
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
   #root {
     font-size: 10px;
   }
 }
+
 @media screen and (min-width: 800px) and (max-width: 1000px) {
   #root {
     font-size: 8px;
   }
 }
+
 @media screen and (min-width: 680px) and (max-width: 799px) {
   #root {
     font-size: 8px;
   }
 }
+
 @media screen and (min-width: 580px) and (max-width: 680px) {
   #root {
     font-size: 7px;
   }
-  /* #content-body1 {
-    width: 46.8125em;
-  } */
 }
+
 @media screen and (min-width: 500px) and (max-width: 580px) {
   #root {
     font-size: 6px;
   }
-  /* #content-body1 {
-    width: 46.8125em;
-  } */
 }
+
 @media screen and (min-height: 353px) {
   .content-box {
     padding-bottom: 15px;
   }
 }
+
 @media screen and (min-width: 470px) and (max-width: 500px) {
   #root {
     font-size: 7px;
   }
-  /* #content-body1 {
-    width: 46.8125em;
-  } */
 }
+
 @media screen and (min-width: 380px) and (max-width: 470px) {
   #root {
     font-size: 7px;
   }
-  /* #content-body1 {
-    width: 46.8125em;
-  } */
 }
 
 @media screen and (max-width: 380px) {
@@ -247,33 +223,3 @@ button.submitBtn1 img {
     height: 15vh;
   }
 }
-
-/* 
-.floating-item {
-  position: absolute;
-  color: white;
-  pointer-events: none;
-  top: 27px;
-  left: 226px;
-  transition: 0.2s ease all;
-}
-
-input:focus ~ .floating-item,
-input:not(:focus):valid ~ .floating-item {
-  top: 12px;
-  bottom: 10px;
-  font-size: 11px;
-  opacity: 1;
-  padding-bottom: 0;
-}
-
-div input:focus,
-div input:not(:focus):valid {
-  padding-bottom: 1px;
-  height: calc(20px + 5px);
-} 
-
-.floating-label {
-  font-size: 11px;
-  padding: 10px;
-}*/
