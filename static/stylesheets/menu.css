@@ -45,7 +45,6 @@
 
 .flex-item {
   align-items: center;
-  /* background-image: linear-gradient(to bottom right, #3b5667, #2c3d48); */
   background: url(../images/icons/menu/Mask2.svg) no-repeat center center;
   background-size: 100%;
   border-radius: 15px;
@@ -54,13 +53,11 @@
   height: 21.875em;
   justify-content: space-around;
   padding: 0 0px 0 1px;
-  /* margin: 5px 5px 5px 5px; */
   margin: 0.3125em;
   width: 17.59em;
 }
 
 .active {
-  /* background-image: linear-gradient(to bottom right, #d81b24, #1a3751); */
   background: url(../images/icons/menu/Mask1.svg) no-repeat center center;
   background-size: 100%;
 }

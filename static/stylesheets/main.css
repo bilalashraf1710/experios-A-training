@@ -8,12 +8,22 @@
   --eu-font-size-xl: 16px;
   --eu-breakpoint-xs: 365px;
   --eu-breakpoint-sm: 600px;
-  /* --eu-breakpoint-md: 786px; */
-  --eu-breakpoint-md: 992px;
+  --eu-breakpoint-md: 786px;
+  --eu-breakpoint-md1: 992px;
   --eu-breakpoint-lg: 1200px;
   --eu-breakpoint-xl: 1600px;
   --eu-font-family-main: "Montserrat", sans-serif;
   --eu-button-linear-gradient: linear-gradient(to bottom, #f80705, #7b1e1d);
+  --eu-card-linear-gradient-n: linear-gradient(
+    to bottom right,
+    #3b5667,
+    #2c3d48
+  );
+  --eu-card-linear-gradient-a: linear-gradient(
+    to bottom right,
+    #d81b24,
+    #1a3751
+  );
 }
 
 * {
@@ -104,7 +114,7 @@ body {
   margin-right: 0.5em;
 }
 .info2 {
-  width: 9.5625em; /* 8.8125em */
+  width: 9.5625em;
   min-width: 80px;
   height: 2.3125em;
   min-height: 18px;
@@ -190,7 +200,6 @@ body {
 @media screen and (max-width: 600px) {
   #root {
     font-size: var(--eu-font-size-xs);
-    /* overflow-y: auto; */
     overflow-x: hidden;
   }
   #heading1 {
