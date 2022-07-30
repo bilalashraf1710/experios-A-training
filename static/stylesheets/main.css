@@ -3,20 +3,12 @@
 }
 
 body {
-  /* min-height: 100%; */
-  /* background-image: url(../images/backgrounds/started.svg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; /* 2200px 680px; *
-  background-position: center center; */
   font-family: "Montserrat", sans-serif;
-  /* font-size: 16px; */
+  margin: 0;
+  padding: 0;
 }
 
 #root {
-  position: fixed;
-  top: 0;
-  left: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -24,6 +16,7 @@ body {
   font-size: 16px;
   height: 100%;
   width: 100%;
+  min-height: 100vh;
 }
 
 #header1 {
@@ -32,46 +25,47 @@ body {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  height: 8%;
-  min-height: 5vh;
+  height: 8em;
+  min-height: 10vh;
   padding-top: 1em;
-  margin: auto;
+  margin: auto auto 2em auto;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 90%;
+  padding-bottom: 4em;
+  position: relative;
 }
 
 #content-body1 {
-  position: absolute;
+  position: static;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around;
-  margin: auto;
-  height: 45em;
-  min-height: 200px;
-  width: 96em;
-  /* width: 56.8125em; */
-  min-width: 220px;
+  margin-top: 8%;
 }
 
-.container {
-  min-height: 100%;
-  /* background-image: url(../images/backgrounds/started-copy.svg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-  position: fixed; */
-
-  margin-left: auto;
-  margin-right: auto;
-  width: 65%;
-  padding: 10px;
+.content {
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  font-weight: 500;
+  justify-content: space-around;
+  text-align: center;
+  padding: 2.5em 0 2.5em 0;
 }
 
 .inline-block {
   display: inline-block;
   margin: 0.3em;
-  /* margin: 0.5em; */
 }
 
 #header {
@@ -157,15 +151,11 @@ body {
 
 div.info1 img {
   margin: 0 10px 0px 0;
-  /* width: 1.375em;
-  height: 1em; */
   width: 1.375em;
   height: 1em;
 }
 div.info2 img {
   margin: 0 5px 0 0;
-  /* width: 1.0788em;
-  height: 1.1506em; */
   width: 1.0788em;
   height: 1.1506em;
 }
@@ -184,25 +174,24 @@ div.info2 img {
 }
 
 .content-box {
-  padding: 1.5625em 0px 3.75em 0;
+  backdrop-filter: blur(25px);
+  background-color: rgba(17, 52, 70, 0.6);
   border: 2px solid #35515d;
   border-radius: 15px;
-  background-color: rgba(17, 52, 70, 0.6);
-  backdrop-filter: blur(25px);
+  width: 56.8125em;
+  height: 25.625em;
+  padding: 1.5625em 8em 3.75em 8em;
 }
 
 .font-large {
   font-size: 2rem;
 }
-
 .font-medium {
   font-size: 1.375rem;
 }
-
 .font-small {
   font-size: 1rem;
 }
-
 .hide {
   display: none;
 }
@@ -214,7 +203,6 @@ div.info2 img {
 .exitBtn:active {
   background-image: linear-gradient(to bottom, #f80705, #7b1e1d);
 }
-
 .exitBtn {
   background-color: transparent;
   width: 100%;
@@ -242,7 +230,6 @@ div.info2 img {
   height: 35px;
   margin: auto auto 15px;
 }
-
 .text {
   text-align: center;
   overflow: hidden;
@@ -253,7 +240,6 @@ div.info2 img {
   background: white url(../images/icons/intro-icons/edit.svg) no-repeat 98% 50%;
   border: transparent;
 }
-
 input[type="text"]:focus {
   border: transparent;
   outline: transparent;
@@ -268,129 +254,77 @@ input[type="text"]:focus {
   border: none;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1919px) {
   #root {
     font-size: 16px;
   }
 }
 
-@media screen and (min-width: 1700px) and (max-width: 1920px) {
+@media screen and (min-width: 2500px) {
+  #root {
+    font-size: 26px;
+  }
+  #content-body1 {
+    margin-top: 7%;
+  }
+}
+
+@media screen and (min-width: 1700px) and (max-width: 1919px) {
   #root {
     font-size: 14px;
   }
 }
+
 @media screen and (min-width: 1450px) and (max-width: 1700px) {
   #root {
     font-size: 12px;
   }
-}
-@media screen and (min-width: 1200px) and (max-width: 1450px) {
-  #root {
-    font-size: 11px;
+  #content-body1 {
+    margin-top: 12%;
   }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1450px) {
   #root {
     font-size: 10px;
   }
+  #content-body1 {
+    margin-top: 17%;
+  }
 }
 
-@media screen and (min-width: 800px) and (max-width: 1000px) {
+@media screen and (min-width: 800px) and (max-width: 1200px) {
   #root {
     font-size: 8px;
   }
-}
-
-@media screen and (min-width: 680px) and (max-width: 800px) {
-  #root {
-    font-size: 8px;
-  }
-}
-
-@media screen and (min-height: 720px) {
-  .container {
-    padding-top: 10em;
-  }
-}
-
-@media screen and (min-width: 580px) and (max-width: 680px) {
-  #root {
-    font-size: 7px;
-  }
-}
-
-@media screen and (min-width: 500px) and (max-width: 580px) {
-  #root {
-    font-size: 7px;
-  }
-}
-
-@media screen and (min-height: 353px) {
-  .content-box {
-    padding-bottom: 15px;
-  }
-}
-
-@media screen and (max-height: 710px) {
-  .content-box {
-    padding-top: 7em;
-    height: 160%;
-    padding-bottom: 15px;
-  }
-}
-
-@media screen and (min-width: 470px) and (max-width: 500px) {
-  #root {
-    font-size: 7px;
-  }
-
   #content-body1 {
-    width: 80vw;
-    height: 20vh;
-  }
-
-  #content-body1 .flex {
-    flex-flow: column-reverse;
-    align-content: space-around;
+    margin-top: 22%;
   }
 }
 
-@media screen and (min-width: 380px) and (max-width: 470px) {
+@media screen and (min-width: 580px) and (max-width: 800px) {
   #root {
-    font-size: 7px;
+    font-size: 7.5px;
   }
-
   #content-body1 {
-    width: 80vw;
-    height: 15vh;
-  }
-
-  #content-body1 .flex {
-    flex-flow: column-reverse;
-    align-content: space-around;
+    margin-top: 27%;
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 580px) {
   #root {
-    font-size: 7px;
+    font-size: 6.5px;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
-  #header1 .flex {
-    width: 100%;
-    justify-content: space-around;
-    align-content: center;
-  }
-  #header1 {
+  #heading1 {
     justify-content: space-around;
   }
   #content-body1 {
     width: 100vw;
-    /* height: 15vh; */
+    height: 90%;
   }
-
   #content-body1 .flex {
-    flex-direction: column-reverse;
-    align-content: space-around;
+    flex-flow: column-reverse nowrap;
   }
 }

@@ -1,48 +1,24 @@
 @charset "UTF-8";
 @import "main.css";
 
-body {
-  background-image: none;
-}
-
 #root {
   background-image: url(../images/backgrounds/menu.svg);
-  overflow: auto;
-}
-
-.container {
-  align-items: center;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  padding-bottom: 8em;
 }
 
 .content {
-  /* align-items: center; */
-  color: white;
-  display: flex;
-  flex-flow: column nowrap;
-  font-weight: 500;
-  justify-content: space-around;
-  text-align: center;
-  overflow: none;
-  padding-top: 5px;
+  padding-bottom: 4.5em;
 }
 
 .content-text {
   margin: 0 auto 10px auto;
   text-align: center;
-  width: 51.6875rem;
 }
 .content p:first-child {
   font-size: 1.875em;
-  height: 2.4375rem;
 }
 
 .content p:last-child {
   font-size: 3.75em;
-  height: 4.9375rem;
   letter-spacing: 3px;
 }
 
@@ -55,8 +31,8 @@ body {
 .label {
   color: rgb(255, 255, 255, 0.5);
   font-size: 2em;
-  margin-top: 1.3125em;
   margin-left: -1.375em;
+  margin-top: 1.3125em;
 }
 
 .label-w {
@@ -73,8 +49,8 @@ body {
   flex-flow: column nowrap;
   height: 21.875em;
   justify-content: space-around;
-  padding: 0 5px 0 5px;
-  margin: 0 5px 0 5px;
+  padding: 0 0px 0 1px;
+  margin: 5px 5px 5px 5px;
   width: 17.59em;
 }
 
@@ -82,59 +58,4 @@ body {
   /* background-image: linear-gradient(to bottom right, #d81b24, #1a3751); */
   background: url(../images/icons/menu/Mask1.svg) no-repeat center center;
   background-size: 100%;
-}
-
-@media screen and (min-width: 470px) and (max-width: 500px) {
-  #root {
-    font-size: 7px;
-  }
-
-  #content-body1 {
-    width: 80vw;
-    /* height: 20vh; */
-  }
-
-  #content-body1 .flex {
-    flex-flow: column-reverse;
-    align-content: space-around;
-  }
-}
-
-@media screen and (min-width: 380px) and (max-width: 470px) {
-  #root {
-    font-size: 7px;
-  }
-
-  #content-body1 {
-    width: 80vw;
-    /* height: 15vh; */
-  }
-
-  #content-body1 .flex {
-    flex-flow: column-reverse;
-    align-content: space-around;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  #root {
-    font-size: 7px;
-  }
-  #header1 .flex {
-    width: 100%;
-    justify-content: space-around;
-    align-content: center;
-  }
-  #header1 {
-    justify-content: space-around;
-  }
-  #content-body1 {
-    width: 100vw;
-    /* height: 15vh; */
-  }
-
-  #content-body1 .flex {
-    flex-direction: column-reverse;
-    align-content: space-around;
-  }
 }
