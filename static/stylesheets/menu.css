@@ -1,57 +1,63 @@
-body {
+@charset "UTF-8";
+@import "main.css";
+
+#root {
   background-image: url(../images/backgrounds/menu.svg);
 }
 
-#content-body {
-  background-color: transparent;
-  border: transparent;
-  backdrop-filter: blur(0px);
+#content-body1 {
+  margin-top: 7em;
 }
 
-.grid-container {
-  margin: auto;
-  justify-content: space-around;
-  padding-top: 4em;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  column-gap: 20px;
-  height: 17em;
+.content {
+  padding-bottom: 4.5em;
+}
+
+.content-text {
+  margin: 0 auto 10px auto;
+  text-align: center;
+}
+.content p:first-child {
+  font-size: 1.875em;
+}
+
+.content p:last-child {
+  font-size: 3.75em;
+  letter-spacing: 3px;
 }
 
 .image {
-  width: 7em;
-  height: 5em;
-  margin: 50px;
-  margin-bottom: 110px;
+  height: 8.5625em;
+  margin-top: 2em;
+  width: 8.5625em;
 }
 
-.grid-item {
-  border-radius: 15px;
-  width: 14em;
-  height: 18em;
-}
-
-.heading-space {
-  margin-top: 0;
-  /* padding-top: 3px; */
-}
-
-.labels {
-  padding-top: 80em;
-  padding-left: 10px;
+.label {
   color: rgb(255, 255, 255, 0.5);
+  font-size: 2em;
+  margin-left: -1.375em;
+  margin-top: 1.3125em;
 }
 
-.label-white {
-  color: white;
+.label-w {
+  color: var(--eu-font-color-main);
 }
 
-.item1,
-.item2,
-.item3 {
-  background-image: linear-gradient(135deg, #3b5667, #2c3d48);
+.flex-item {
+  align-items: center;
+  background: url(../images/icons/menu/Mask2.svg) no-repeat center center;
+  background-size: 100%;
+  border-radius: 15px;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 21.875em;
+  justify-content: space-around;
+  padding: 0 0px 0 1px;
+  margin: 0.3125em;
+  width: 17.59em;
 }
 
-.item4 {
-  background-image: linear-gradient(135deg, #d81b24, #1a3751);
+.active {
+  background: url(../images/icons/menu/Mask1.svg) no-repeat center center;
+  background-size: 100%;
 }
