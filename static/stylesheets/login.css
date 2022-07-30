@@ -5,6 +5,10 @@
   background-image: url(../images/backgrounds/login.svg);
 }
 
+#content-body1 {
+  margin-top: 12em;
+}
+
 .content .heading {
   font-size: 3.75em;
   margin: 5px;
@@ -18,8 +22,7 @@
 
 .form1 {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-flow: column nowrap;
   justify-content: center;
 }
 
@@ -36,7 +39,7 @@ form div {
 }
 
 .text-input {
-  color: white;
+  color: var(--eu-font-color-main);
   font-size: 1em;
   font-weight: 500;
   border: transparent;
@@ -53,7 +56,7 @@ form div {
 }
 
 ::placeholder {
-  color: white;
+  color: var(--eu-font-color-main);
   opacity: 1;
 }
 
@@ -71,12 +74,12 @@ form div {
 .submitBtn1 {
   font-weight: 500;
   font-size: 1.125em;
-  color: white;
+  color: var(--eu-font-color-main);
   border: none;
   border-radius: 25px;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to bottom, #f80705, #7b1e1d);
+  background-image: var(--eu-button-linear-gradient);
 }
 
 button.submitBtn1 img {

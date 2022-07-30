@@ -5,6 +5,10 @@
   background-image: url(../images/backgrounds/menu.svg);
 }
 
+#content-body1 {
+  margin-top: 7em;
+}
+
 .content {
   padding-bottom: 4.5em;
 }
@@ -36,7 +40,7 @@
 }
 
 .label-w {
-  color: white;
+  color: var(--eu-font-color-main);
 }
 
 .flex-item {
@@ -50,7 +54,8 @@
   height: 21.875em;
   justify-content: space-around;
   padding: 0 0px 0 1px;
-  margin: 5px 5px 5px 5px;
+  /* margin: 5px 5px 5px 5px; */
+  margin: 0.3125em;
   width: 17.59em;
 }
 
