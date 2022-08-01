@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <title>Getting Started</title>
+
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Experios, Virtual Escape" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./static/stylesheets/main.css" />
+    <link rel="stylesheet" href="./static/stylesheets/hints.css" />
+  </head>
+
+  <body>
+    <div id="root">
+      <header id="header1">
+        <!-- Logos -->
+        <div class="flex-row logos">
+          <img
+            src="static/images/logos/experios.svg"
+            alt="Experios Logo"
+            class="inline-block logo1"
+          />
+          <img
+            src="static/images/logos/virtualescape.svg"
+            alt="Virtual Escape Logo"
+            class="inline-block logo2"
+          />
+        </div>
+
+        <!-- Info -->
+        <div class="flex-row infos">
+          <div class="inline-block info info1">
+            <img
+              src="static/images/icons/connection.svg"
+              alt="Online Connection Icon"
+              class="inline-block vertical-align"
+            />
+            <span class="inline-block context"> 6 CONNECTED </span>
+          </div>
+
+          <div class="inline-block info info2">
+            <img
+              src="static/images/icons/logout.svg"
+              alt="Exit Icon"
+              class="inline-block vertical-align"
+            />
+            <span class="inline-block context"> LOG OUT</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+        <div id="content-body1" class="contentbody1-background">
+            
+          <section class="section main-section">
+            <header class="head">
+                <span class="heading"> GAME: TIME'S TICKING </span>
+                <div class="header-box time-box">
+                  <span class="main-text"> 52:25 </span>
+                  <span class="context-text"> REMAINING</span>
+                </div>
+    
+                <div class="header-box time-box">
+                  <span class="main-text"> 0 </span>
+                  <span class="context-text"> INCORRECT </span>
+                </div>
+    
+                <div class="header-box time-box">
+                  <span class="main-text"> 1 </span>
+                  <span class="context-text"> HINTS </span>
+                </div>
+            </header>
+
+            <span class="green">Intro</span>
+            <br />
+            <p>
+              All right, we’ve just received a phone call from a terrorist
+              threatening the blow up a building in the city in the next 60
+              minutes. <br />
+              We need to find the bomb and disarm it. <br />
+              We then need to catch the terrorist. Let’s work together and do
+              this. <br />
+              Here is the audio recording with the terrorist.
+            </p>
+
+            <div class="audio-container">
+              <!-- <audio src="" preload="metadata"></audio> -->
+              <p>AUDIO ReCORDING</p>
+              <span class="play-icon"> </span>
+              <progress class="player-range" value="0">00:00</progress>
+              <div class="player-time">
+                <span>0:00</span>
+                <span>2:52</span>
+              </div>
+            </div>
+
+            <span class="green">EVIDENCE</span>
+            <br />
+            <p>
+              Our tech team managed to secure some evidence from his phone
+              before he switched it off. <br />
+              We’ve also identified he’s somewhere in the east of Melbourne,
+              Australia. But the call was too short for an exact location.
+              <br />
+
+              Before we look for him, let’s first find the bomb and disarm it.
+              <br />
+              Hopefully one of the websites contains more information about its
+              location and how to disarm it. <br />
+
+              Can you have a look at the websites and inform me once you find a
+              suspicious looking websites that could contain more information?
+            </p>
+          </section>
+
+          <div class="evidence-report">
+            <div class="left-side">
+                <span>EVIDENCE</span>
+                <div>
+                    <img src="static/images/icons/hints/" alt="evidence paper" class="">
+                    <span> Evidence_1.txt </span>
+                </div>
+            </div>
+            <div class="right-side">
+            <span>(Click to enlarge)</span>
+            <div>
+                <img src="static/images/icons/hints/" alt="evidence image" class="">
+                <span> Evidence_2.png </span>
+            </div>
+            </div>
+          </div>
+
+      </div>
+
+      <div class="section second-section">
+        <div class="left-section">
+          <span class="green">THE CHALLENGE</span>
+          <span> Which website is likely to contain more information about the bomb? </span>
+  
+          <select id="game-info">
+            <option>Bjorn’s website</option>
+          </select>
+          
+          <div class="buttons">
+            <button type="button"> REQUEST HINT </button>
+            <button type="button"> SUBMIT ANSWER </button>
+          </div>
+        </div>
+
+        <div class="right-section">
+          <div class="header-box">
+            <span> NEXT HINT AVAILABLE </span>
+            <span> NOW </span> 
+          </div>
+          <div class="header-box">
+            <span> HINT PENALTY </span>
+            <span> -30s </span> 
+          </div>
+          <div class="header-box">
+            <span> INCORRECT ANSWER PENALTY </span>
+            <span> -30s </span> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
