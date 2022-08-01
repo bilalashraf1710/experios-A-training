@@ -82,6 +82,10 @@ section p {
   font-size: 1.25em;
 }
 
+.line-height {
+  line-height: 1.5;
+}
+
 .left-aligned {
   text-align: left;
 }
@@ -173,8 +177,8 @@ section p {
 }
 
 .btn-img {
-  width: 1.2093rem;
-  height: 0.9019rem;
+  width: 1.2093em;
+  height: 0.9019em;
 }
 
 .btn-padding {
