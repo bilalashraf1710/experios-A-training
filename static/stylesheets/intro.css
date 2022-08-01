@@ -181,6 +181,11 @@ section p {
   height: 0.9019rem;
 }
 
+.btn-padding {
+  padding-top: 2em;
+  margin-bottom: 1em;
+}
+
 @media screen and (max-width: 600px) {
   #header1 {
     justify-content: space-around;
