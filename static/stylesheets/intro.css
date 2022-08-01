@@ -124,23 +124,19 @@ section p {
   justify-content: space-evenly;
 }
 .player-card {
-  background: #a51314 url(../images/icons/intro/player-bg.svg) no-repeat center
-    center fixed;
-  background-size: 100%;
+  background-color: #a51314;
   border-radius: 10px;
   color: white;
   margin: 0.9em;
   padding: 0.8em;
   text-align: center;
-  transform: skew(-10, -10);
+  transform: skew(1turn, -1deg);
   width: 9.05em;
   height: 10.3688em;
 }
 
 .green {
-  background: #7ab738 url(../images/icons/intro/player-bg-green.svg) no-repeat
-    center center fixed;
-  background-size: 100%;
+  background-color: #7ab738;
 }
 
 .player-img {
