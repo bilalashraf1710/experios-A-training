@@ -79,7 +79,7 @@ form div {
   border-radius: 25px;
   height: 100%;
   width: 100%;
-  background-image: var(--eu-button-linear-gradient);
+  background-image: var(--eu-button-linear-gradient-r);
 }
 
 button.submitBtn1 img {
