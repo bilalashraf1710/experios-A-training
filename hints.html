@@ -57,114 +57,127 @@
             
           <section class="section main-section">
             <header class="head">
-                <span class="heading"> GAME: TIME'S TICKING </span>
-                <div class="header-box time-box">
-                  <span class="main-text"> 52:25 </span>
-                  <span class="context-text"> REMAINING</span>
-                </div>
-    
-                <div class="header-box time-box">
-                  <span class="main-text"> 0 </span>
-                  <span class="context-text"> INCORRECT </span>
-                </div>
-    
-                <div class="header-box time-box">
-                  <span class="main-text"> 1 </span>
-                  <span class="context-text"> HINTS </span>
+                <div class="heading"> GAME: TIME'S TICKING </div>
+                <div class="flex-row">
+                  <div class="header-box box-red">
+                    <span class="main-text"> 52:25 </span>
+                    <span class="context-text"> REMAINING</span>
+                  </div>
+      
+                  <div class="header-box">
+                    <span class="main-text"> 0 </span>
+                    <span class="context-text"> INCORRECT </span>
+                  </div>
+      
+                  <div class="header-box">
+                    <span class="main-text"> 1 </span>
+                    <span class="context-text"> HINTS </span>
+                  </div>
                 </div>
             </header>
 
-            <span class="green">Intro</span>
-            <br />
-            <p>
-              All right, we’ve just received a phone call from a terrorist
-              threatening the blow up a building in the city in the next 60
-              minutes. <br />
-              We need to find the bomb and disarm it. <br />
-              We then need to catch the terrorist. Let’s work together and do
-              this. <br />
-              Here is the audio recording with the terrorist.
-            </p>
+            <div class="intro">
+              <div class="green">INTRO</div>
+              <br />
+              <p class="paragraph">
+                All right, we’ve just received a phone call from a terrorist
+                threatening the blow up a building in the city in the next 60
+                minutes. <br /><br />
+                We need to find the bomb and disarm it. <br />
+                We then need to catch the terrorist. Let’s work together and do
+                this. <br />
+                <span style="display: none;">Here is the audio recording with the terrorist.</span>
+              </p>
+            </div>
 
-            <div class="audio-container">
+            <div class="audio-container flex-column">
               <!-- <audio src="" preload="metadata"></audio> -->
-              <p>AUDIO ReCORDING</p>
-              <span class="play-icon"> </span>
-              <progress class="player-range" value="0">00:00</progress>
-              <div class="player-time">
-                <span>0:00</span>
-                <span>2:52</span>
+              <div class="audio-heading">AUDIO RECORDING</div>
+              <div class="recording"> 
+                <img src="/static/images/icons/hints/audio.svg" alt="audio player" class="play-icon">
+                <progress class="player-range" value="100">00:00</progress>
+                <div class="player-time">
+                  <div>0:00</div>
+                  <div>2:52</div>
+                </div>
               </div>
             </div>
 
-            <span class="green">EVIDENCE</span>
-            <br />
-            <p>
-              Our tech team managed to secure some evidence from his phone
-              before he switched it off. <br />
-              We’ve also identified he’s somewhere in the east of Melbourne,
-              Australia. But the call was too short for an exact location.
+            <div class="evidence">
+              <div class="green">EVIDENCE</div>
               <br />
+              <p class="paragraph">
+                Our tech team managed to secure some evidence from his phone
+                before he switched it off. <br />
+                We’ve also identified he’s somewhere in the east of Melbourne,
+                Australia. But the call was too short for an exact location.
+                <br /><br/>
 
-              Before we look for him, let’s first find the bomb and disarm it.
-              <br />
-              Hopefully one of the websites contains more information about its
-              location and how to disarm it. <br />
+                Before we look for him, let’s first find the bomb and disarm it.
+                <br />
+                Hopefully one of the websites contains more information about its
+                location and how to disarm it. <br /><br />
 
-              Can you have a look at the websites and inform me once you find a
-              suspicious looking websites that could contain more information?
+                Can you have a look at the websites and inform me once you find a
+                suspicious looking websites that could contain more information?
             </p>
+            </div>
+            
+            <div class="evidence-report">
+              <div class="left-side">
+                  <div class="report-heading">EVIDENCE</div>
+                  <div class="report-flex">
+                      <img src="static/images/icons/hints/text.svg" alt="evidence paper" class="left-image">
+                      <div> Evidence_1.txt </div>
+                  </div>
+              </div>
+
+              <div class="right-side">
+              <div class="report-heading">(Click to enlarge)</div>
+              <div class="report-flex">
+                  <img src="static/images/icons/hints/image.svg" alt="evidence image" class="right-image">
+                  <div> Evidence_2.png </div>
+              </div>
+              </div>
+            </div>
           </section>
 
-          <div class="evidence-report">
-            <div class="left-side">
-                <span>EVIDENCE</span>
-                <div>
-                    <img src="static/images/icons/hints/" alt="evidence paper" class="">
-                    <span> Evidence_1.txt </span>
+          <section class="second-section">
+            <div class="section left-section">
+              <div class="green">THE CHALLENGE</div> <br />
+              <div class="hint-question"> Which website is likely to contain more information about the bomb? </div>
+              <br />
+              <div class="game-option">
+                <select id="game-info" name="gameinfo">
+                  <option>Bjorn’s website</option>
+                  <option>Bjorn’s website</option>
+                  <option>Bjorn’s website</option>
+                </select>
+                
+                <div class="buttons">
+                  <button type="button" class="btn btn-request"> REQUEST HINT </button>
+                  <button type="button" class="btn btn-submit"> SUBMIT ANSWER </button>
                 </div>
+              </div>
             </div>
-            <div class="right-side">
-            <span>(Click to enlarge)</span>
-            <div>
-                <img src="static/images/icons/hints/" alt="evidence image" class="">
-                <span> Evidence_2.png </span>
+              
+            <div class="section right-section">
+              <div class="header-box info-box ">
+                <span class="hint-context"> NEXT HINT AVAILABLE </span>
+                <span class="hint-text"> NOW </span> 
+              </div>
+              <div class="header-box info-box">
+                <span class="hint-context"> HINT PENALTY </span>
+                <span class="hint-text"> -30s </span> 
+              </div>
+              <div class="header-box info-box">
+                <span class="hint-context"> INCORRECT ANSWER PENALTY </span>
+                <span class="hint-text"> -30s </span> 
+              </div>
             </div>
-            </div>
-          </div>
-
+          </section>
       </div>
 
-      <div class="section second-section">
-        <div class="left-section">
-          <span class="green">THE CHALLENGE</span>
-          <span> Which website is likely to contain more information about the bomb? </span>
-  
-          <select id="game-info">
-            <option>Bjorn’s website</option>
-          </select>
-          
-          <div class="buttons">
-            <button type="button"> REQUEST HINT </button>
-            <button type="button"> SUBMIT ANSWER </button>
-          </div>
-        </div>
-
-        <div class="right-section">
-          <div class="header-box">
-            <span> NEXT HINT AVAILABLE </span>
-            <span> NOW </span> 
-          </div>
-          <div class="header-box">
-            <span> HINT PENALTY </span>
-            <span> -30s </span> 
-          </div>
-          <div class="header-box">
-            <span> INCORRECT ANSWER PENALTY </span>
-            <span> -30s </span> 
-          </div>
-        </div>
-      </div>
     </div>
   </body>
 </html>

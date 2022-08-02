@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <title>Getting Started</title>
+
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Experios, Virtual Escape" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./static/stylesheets/main.css" />
+    <link rel="stylesheet" href="./static/stylesheets/hints.css" />
+    <link rel="stylesheet" href="./static/stylesheets/game.css" />
+  </head>
+
+  <body>
+    <div id="root">
+      <header id="header1">
+        <!-- Logos -->
+        <div class="flex-row logos">
+          <img
+            src="static/images/logos/experios.svg"
+            alt="Experios Logo"
+            class="inline-block logo1"
+          />
+          <img
+            src="static/images/logos/virtualescape.svg"
+            alt="Virtual Escape Logo"
+            class="inline-block logo2"
+          />
+        </div>
+
+        <!-- Info -->
+        <div class="flex-row infos">
+          <div class="inline-block info info1">
+            <img
+              src="static/images/icons/connection.svg"
+              alt="Online Connection Icon"
+              class="inline-block vertical-align"
+            />
+            <span class="inline-block context"> 6 CONNECTED </span>
+          </div>
+
+          <div class="inline-block info info2">
+            <img
+              src="static/images/icons/logout.svg"
+              alt="Exit Icon"
+              class="inline-block vertical-align"
+            />
+            <span class="inline-block context"> LOG OUT</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+        <div id="content-body1" class="contentbody1-background">
+            
+          <section class="section main-section main-section-width">
+            <header class="head">
+                <div class="heading"> GAME: TIME'S TICKING </div>
+                <div class="flex-row">
+                  <div class="header-box box-red">
+                    <span class="main-text"> 52:25 </span>
+                    <span class="context-text"> REMAINING</span>
+                  </div>
+      
+                  <div class="header-box">
+                    <span class="main-text"> 0 </span>
+                    <span class="context-text"> INCORRECT </span>
+                  </div>
+      
+                  <div class="header-box">
+                    <span class="main-text"> 1 </span>
+                    <span class="context-text"> HINTS </span>
+                  </div>
+                </div>
+            </header>
+
+            <div class="intro">
+              <div class="green">WEBSITE</div>
+              <br />
+              <p class="paragraph">
+                Awesome Work! <br />
+                <span style="display: none;">Here is the audio recording with the terrorist.</span>
+              </p>
+            </div>
+
+            <div class="game-image">
+              <img src="/static/images/icons/game/image1.svg" alt="image 1" class="image1" />
+            </div>
+
+            <div class="evidence">
+              <p class="paragraph">
+                We need to know the location of the bomb and hopefully there's also some information about the bomb itself. <br />
+                Let me know once you figured out what the location is and I'll send the squad there.
+              </p>
+            </div>
+          </section>
+
+          <section class="second-section">
+            <div class="section left-section">
+              <div class="green">THE CHALLENGE</div> <br />
+              <div class="hint-question"> 
+                That Bjorn Willy website looks very suspicious indeed. <br>
+                But it needs a password to log in. Can you tell us what the password is? 
+              </div>
+              <br />
+              <div class="game-option">
+                <select id="game-info" name="gameinfo">
+                  <option>Bjorn’s website</option>
+                  <option>Bjorn’s website</option>
+                  <option>Bjorn’s website</option>
+                </select>
+                
+                <div class="buttons">
+                  <button type="button" class="btn btn-request"> REQUEST HINT </button>
+                  <button type="button" class="btn btn-submit"> SUBMIT ANSWER </button>
+                </div>
+              </div>
+            </div>
+              
+            <div class="section right-section">
+              <div class="header-box info-box ">
+                <span class="hint-context"> NEXT HINT AVAILABLE </span>
+                <span class="hint-text"> NOW </span> 
+              </div>
+              <div class="header-box info-box">
+                <span class="hint-context"> HINT PENALTY </span>
+                <span class="hint-text"> -30s </span> 
+              </div>
+              <div class="header-box info-box">
+                <span class="hint-context"> INCORRECT ANSWER PENALTY </span>
+                <span class="hint-text"> -30s </span> 
+              </div>
+            </div>
+          </section>
+      </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <title>Getting Started</title>
+
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Experios, Virtual Escape" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./static/stylesheets/main.css" />
+    <link rel="stylesheet" href="./static/stylesheets/hints.css" />
+    <link rel="stylesheet" href="./static/stylesheets/game.css" />
+  </head>
+
+  <body>
+    <div id="root">
+      <header id="header1">
+        <!-- Logos -->
+        <div class="flex-row logos">
+          <img
+            src="static/images/logos/experios.svg"
+            alt="Experios Logo"
+            class="inline-block logo1"
+          />
+          <img
+            src="static/images/logos/virtualescape.svg"
+            alt="Virtual Escape Logo"
+            class="inline-block logo2"
+          />
+        </div>
+
+        <!-- Info -->
+        <div class="flex-row infos">
+          <div class="inline-block info info1">
+            <img
+              src="static/images/icons/connection.svg"
+              alt="Online Connection Icon"
+              class="inline-block vertical-align"
+            />
+            <span class="inline-block context"> 6 CONNECTED </span>
+          </div>
+
+          <div class="inline-block info info2">
+            <img
+              src="static/images/icons/logout.svg"
+              alt="Exit Icon"
+              class="inline-block vertical-align"
+            />
+            <span class="inline-block context"> LOG OUT</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+        <div id="content-body1" class="contentbody1-background">
+            
+          <section class="section main-section main-section-width">
+            <header class="head">
+                <div class="heading"> GAME: TIME'S TICKING </div>
+                <div class="flex-row">
+                  <div class="header-box box-red">
+                    <span class="main-text"> 52:25 </span>
+                    <span class="context-text"> REMAINING</span>
+                  </div>
+      
+                  <div class="header-box">
+                    <span class="main-text"> 0 </span>
+                    <span class="context-text"> INCORRECT </span>
+                  </div>
+      
+                  <div class="header-box">
+                    <span class="main-text"> 1 </span>
+                    <span class="context-text"> HINTS </span>
+                  </div>
+                </div>
+            </header>
+
+            <div class="intro">
+              <div class="green">SUITCASE</div>
+              <br />
+              <p class="paragraph">
+               I'll send a squad to the location right away. <br />
+               They are around the corner and should be there in a matter of seconds... <br />
+               <span style="display: none;">Here is the audio recording with the terrorist.</span>
+              </p>
+            </div>
+
+            <div class="game-image game2">
+              <img src="/static/images/icons/game/image2.svg" alt="image 2" class="image2" />
+            </div>
+
+            <div class="evidence">
+              <p class="paragraph">
+                Ok, they have arrived and found a suitcase.
+                <br /> <br />
+                Now we hope one of the documents contains more information on how to disarm the bomb.
+                Let me know once you've found it! </p>
+            </div>
+          </section>
+
+          <section class="second-section">
+            <div class="section left-section">
+              <div class="green">THE CHALLENGE</div> <br />
+              <div class="hint-question"> 
+                What is the name of the document that contains more information about how to
+                disarming the bomb? 
+              </div>
+              <br />
+
+              <div class="game-option">
+                <input type="text" id="game-info" />
+                
+                <div class="buttons">
+                  <button type="button" class="btn btn-request"> REQUEST HINT </button>
+                  <button type="button" class="btn btn-submit"> SUBMIT ANSWER </button>
+                </div>
+              </div>
+            </div>
+              
+            <div class="section right-section">
+              <div class="header-box info-box ">
+                <span class="hint-context"> NEXT HINT AVAILABLE </span>
+                <span class="hint-text"> NOW </span> 
+              </div>
+              <div class="header-box info-box">
+                <span class="hint-context"> HINT PENALTY </span>
+                <span class="hint-text"> -30s </span> 
+              </div>
+              <div class="header-box info-box">
+                <span class="hint-context"> INCORRECT ANSWER PENALTY </span>
+                <span class="hint-text"> -30s </span> 
+              </div>
+            </div>
+          </section>
+      </div>
+
+    </div>
+  </body>
+</html>

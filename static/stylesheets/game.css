@@ -1,0 +1,30 @@
+.game-image {
+  padding: 0.5em;
+  background-color: #0e2634;
+  backdrop-filter: blur(10px);
+  border: 1px solid #35515d;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 2em;
+  align-self: center;
+}
+
+.game2 {
+  padding: 1.5em;
+  margin-bottom: 3em;
+  /* height: 24em; */
+}
+
+.main-section-width {
+  width: 73.125em;
+}
+
+.image1 {
+  width: 45.625em;
+  height: 32.1875em;
+}
+
+.image2 {
+  width: 43.625em;
+  height: 20.875em;
+}
