@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <title>Getting Started</title>
+
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Experios, Virtual Escape" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./static/stylesheets/login.css" />
+  </head>
+
+  <body>
+    <div id="root" class="flex-column">
+      <header id="header1">
+        <!-- Logos -->
+        <div class="flex">
+          <img
+            src="static/images/logos/experios.svg"
+            alt="Experios Logo"
+            class="inline-block logo1"
+          />
+          <img
+            src="static/images/logos/virtualescape.svg"
+            alt="Virtual Escape Logo"
+            class="inline-block logo2"
+          />
+        </div>
+
+        <!-- Info -->
+        <div class="flex">
+          <div class="inline-block info info1">
+            <img
+              src="static/images/icons/connection.svg"
+              alt="Online Connection Icon"
+              class="inline-block vertical-align"
+            />
+            <span class="inline-block context"> 6 CONNECTED </span>
+          </div>
+
+          <div class="inline-block info info2">
+            <img
+              src="static/images/icons/exit.svg"
+              alt="Exit Icon"
+              class="inline-block vertical-align"
+            />
+            <span class="inline-block context"> EXIT GAME</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+        <div id="content-body1" class="content-box">
+          <section class="content">
+            <p class="heading">VIRTUAL ESCAPE</p>
+            <p class="desc">Enter your game code below to get started</p>
+          </section>
+
+          <form class="form1" autocomplete="off">
+            <div class="block text-field">
+              <input
+                type="text"
+                name="team_name"
+                placeholder="Game Code"
+                class="text-input block"
+                maxlength="8"
+              />
+              <img
+                src="static/images/icons/login-icons/question.svg"
+                alt="Hint Icon"
+                class="hint-img"
+              />
+            </div>
+            <div class="block btn-submit">
+              <button class="submitBtn1" type="submit">
+                LOG IN &nbsp;
+                <img
+                  class="vertical-align"
+                  src="./static/images/icons/login-icons/fingerprint.svg"
+                />
+              </button>
+            </div>
+          </form>
+
+          <div>
+            <img
+              src="/static/images/icons/login-icons/error.svg"
+              alt="error icon"
+              class="error"
+            />
+            <span class="err-message">Invalid game code provided</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

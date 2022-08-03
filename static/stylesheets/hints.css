@@ -55,6 +55,7 @@
 .paragraph {
   font-size: 1.25em;
   margin: 0;
+  padding-right: 4em;
 }
 
 /*** MAIN SECTION ***/
@@ -235,6 +236,10 @@
 /* Select Option */
 .game-option {
   width: 28.875em;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 #game-info {
@@ -249,9 +254,6 @@
   padding-right: 0.9em;
   font-size: 1em;
   margin-left: 0;
-}
-
-.input-info {
 }
 
 option {
@@ -370,11 +372,11 @@ option:hover {
     text-align: center;
   }
   .game-option {
-    width: 100%;
+    width: 50%;
     margin: auto;
   }
   .buttons {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   .btn {
     width: 100%;
