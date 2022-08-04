@@ -72,13 +72,13 @@ section p {
   padding-top: 2%;
 }
 .item-img {
-  height: 2.8081em;
+  height: 3.8081em;
   width: 2.8081em;
 }
 .item-content {
   color: white;
   margin: 0;
-  padding: 1.25rem 0 0 0.8em;
+  padding: 1.25em 0 0 0.8em;
   font-size: 1.25em;
 }
 
@@ -190,5 +190,9 @@ section p {
   #header1 {
     justify-content: space-around;
     margin-bottom: 3em;
+  }
+
+  .item-img {
+    height: 4.8081em;
   }
 }
