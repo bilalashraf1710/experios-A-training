@@ -132,8 +132,6 @@
   opacity: 0;
   width: 0;
   height: 0;
-  /* top: -2px;
-  left: 0; */
 }
 
 .checkmark {
@@ -217,8 +215,6 @@
   cursor: pointer;
   width: 0;
   height: 0;
-  /* top: 0;
-  left: 0; */
 }
 
 .r-checkmark {
