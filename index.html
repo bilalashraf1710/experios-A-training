@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <title>Getting Started</title>
+
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Experios, Virtual Escape" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./static/stylesheets/main.css" />
+    <link rel="stylesheet" href="./static/stylesheets/starting.css" />
+  </head>
+
+  <body>
+    <div id="root">
+      <header id="header1">
+        <!-- Logos -->
+        <div class="flex">
+          <img
+            src="static/images/logos/experios.svg"
+            alt="Experios Logo"
+            class="inline-block logo1"
+          />
+          <img
+            src="static/images/logos/virtualescape.svg"
+            alt="Virtual Escape Logo"
+            class="inline-block logo2"
+          />
+        </div>
+
+        <!-- Info -->
+        <div class="flex">
+          <div class="inline-block info info1">
+            <img
+              src="static/images/icons/connection.svg"
+              alt="Online Connection Icon"
+              class="inline-block vertical-align"
+            />
+            <span class="inline-block context"> 6 CONNECTED </span>
+          </div>
+
+          <div class="inline-block info info2">
+            <img
+              src="static/images/icons/exit.svg"
+              alt="Exit Icon"
+              class="inline-block vertical-align"
+            />
+            <span class="inline-block context"> EXIT GAME</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+        <div id="content-body1" class="content-box">
+          <section class="content">
+            <p class="content-heading">Time for some action!</p>
+
+            <p class="content-desc">
+              Before you start, come up with a catchy team name.
+            </p>
+            <p style="display: none">
+              The name needs to be between 5 and 15 characters and is also
+              displayed on the leaderboard.
+            </p>
+            <br />
+            <p class="font-medium margin-b">You're team name</p>
+
+            <!-- Form Input Text & START GAME Button-->
+            <form class="form" action="/login.html">
+              <div class="block text-field">
+                <input
+                  type="text"
+                  name="team_name"
+                  value="99lions"
+                  class="text-input block font-medium"
+                />
+                <img
+                  src="static/images/icons/starting/edit.svg"
+                  alt="edit"
+                  class="edit-img"
+                />
+              </div>
+              <div class="block input-container">
+                <input
+                  class="submitBtn block"
+                  type="submit"
+                  value="START GAME"
+                />
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -53,8 +53,9 @@ body {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-around;
   width: 100%;
+  max-width: 73.125em;
+  justify-content: space-between;
   height: 8em;
   min-height: 10vh;
   padding-top: 1em;
@@ -183,6 +184,24 @@ body {
 .inline-block {
   display: inline-block;
   /* margin: 0.3em; */
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a.active {
+  text-decoration: 1px solid white;
+}
+
+a:hover {
+  text-decoration: 1px solid white;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
 }
 
 .exitBtn:active {

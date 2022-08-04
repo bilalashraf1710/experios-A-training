@@ -1,0 +1,279 @@
+.game-image {
+  padding: 0.5em;
+  background-color: #0e2634;
+  backdrop-filter: blur(10px);
+  border: 1px solid #35515d;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 2em;
+  align-self: center;
+}
+
+.main-section-width {
+  width: 73.125em;
+}
+
+.main-margin-b {
+  margin-bottom: 1.5em;
+}
+
+.image1 {
+  width: 45.625em;
+  height: 32.1875em;
+}
+
+.game2 {
+  padding: 1.5em;
+  margin-bottom: 3em;
+}
+.image2 {
+  width: 43.625em;
+  height: 20.875em;
+}
+
+.game3 {
+  padding: 1.5em 15em;
+  margin-bottom: 3em;
+}
+.image3 {
+  width: 14.75em;
+  height: 26.375em;
+}
+
+.game4 {
+  padding: 1.5em 4.5em;
+  margin-bottom: 3em;
+}
+.image4 {
+  width: 52.125em;
+  height: 36.5625em;
+}
+
+.game5 {
+  padding: 1em;
+  margin-left: 15em;
+  margin-bottom: 1.5em;
+}
+.image5 {
+  width: 30.4375em;
+  height: 18.9375em;
+}
+
+.image6 {
+  width: 38.625em;
+  height: 27.5625em;
+}
+
+.game7 {
+  padding: 1.5em 2.5em;
+  margin-bottom: 3em;
+  margin-left: 10em;
+}
+.image7 {
+  width: 41.125em;
+  height: 30.9375em;
+}
+
+.game8 {
+  padding: 1.5em 2.5em;
+  margin-bottom: 3em;
+}
+.image8 {
+  width: 33.4375em;
+  height: 33.5em;
+}
+
+/*** Game 10 - Radio Buttons ***/
+.radioBtn {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 32.125em;
+  margin-left: 3em;
+}
+
+.button-center {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.btn12 {
+  width: 24.125em;
+}
+
+.container2 {
+  margin-left: 4.3em;
+}
+
+.radioBtn {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+/*** Custom Radio Button  ***/
+
+.radio-container {
+  display: block;
+  position: relative;
+  font-size: 1.25em;
+  padding-left: 2.5em;
+  cursor: pointer;
+  user-select: none;
+}
+
+#radio1,
+#radio2 {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  /* top: -2px;
+  left: 0; */
+}
+
+.checkmark {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.radio-container input:hover ~ .checkmark {
+  background-color: #35515d;
+}
+
+.radio-container input:checked ~ .checkmark {
+  background-color: #35515d;
+}
+
+.checkmark::after {
+  position: absolute;
+  content: "";
+  display: none;
+}
+
+.radio-container input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.radio-container .checkmark::after {
+  top: 0.17em;
+  left: 0.17em;
+  width: 0.95em;
+  height: 0.95em;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.radioBtn::after {
+  display: initial;
+  content: "";
+  position: initial;
+}
+
+/**** CUSTOM  CHECKBOX  ****/
+.checkbox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: flex-start;
+  align-items: center;
+  align-content: space-around;
+  width: 40.875em;
+  margin-left: 12em;
+  margin-bottom: 2em;
+}
+.box-container {
+  display: block;
+  position: relative;
+  font-size: 1.25em;
+  background-color: transparent;
+  cursor: pointer;
+  user-select: none;
+  padding: 0.5em;
+  padding-left: 2em;
+  margin-right: 1.5em;
+}
+
+#W14,
+#W19,
+#W21,
+#W23,
+#W43,
+#W59,
+#W64,
+#W71,
+#W81 {
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  /* top: 0;
+  left: 0; */
+}
+
+.r-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5em;
+  width: 1.5em;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.r-checkmark::after {
+  position: absolute;
+  content: "";
+  display: none;
+}
+
+.box-container input:hover ~ .r-checkmark {
+  background-color: #0e2634;
+}
+
+.box-container input:checked ~ .r-checkmark::after {
+  display: block;
+}
+
+.box-container .r-checkmark::after {
+  left: 0.5em;
+  top: 0.1em;
+  width: 0.2313em;
+  height: 0.7781em;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 600px) {
+  .radioBtn {
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .radio-container {
+    margin: 1em;
+  }
+  .container2 {
+    margin-left: 3em;
+  }
+
+  .checkbox {
+    width: 100%;
+  }
+}

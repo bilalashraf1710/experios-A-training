@@ -1,0 +1,67 @@
+#root {
+  background-image: url(../images/backgrounds/started.svg);
+}
+
+p {
+  margin: 0.8em;
+}
+
+.content-heading {
+  font-size: 2em;
+}
+
+.content-desc {
+  font-size: 1em;
+}
+
+.hide {
+  display: none;
+}
+
+form div {
+  width: 26.125em;
+  height: 3.125em;
+  margin: 0.5em;
+}
+
+.text-field {
+  position: relative;
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+.text-input {
+  color: black;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 500;
+  border: none;
+  background-color: var(--eu-font-color-main);
+  padding: 0 40px 0 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.text-field input[type="text"]:focus-visible {
+  box-shadow: 0 0 5px white;
+  outline: transparent;
+}
+
+.edit-img {
+  position: absolute;
+  bottom: 0.3em;
+  right: 0.7em;
+  font-style: italic;
+  border-radius: 30px;
+  width: 2.375em;
+  height: 2.375em;
+}
+
+.submitBtn {
+  color: var(--eu-font-color-main);
+  height: 100%;
+  width: 100%;
+  background-image: var(--eu-button-linear-gradient-r);
+  border: none;
+  border-radius: 25px;
+}

@@ -57,7 +57,7 @@
             <p class="desc">Enter your game code below to get started</p>
           </section>
 
-          <form class="form1" autocomplete="off">
+          <form class="form1" action="/menu.html" autocomplete="off">
             <div class="block text-field">
               <input
                 type="text"
@@ -75,6 +75,7 @@
             <div class="block btn-submit">
               <button class="submitBtn1" type="submit">
                 LOG IN &nbsp;
+                <!-- <a href="menu.html">LOG IN &nbsp;</a> -->
                 <img
                   class="vertical-align"
                   src="./static/images/icons/login-icons/fingerprint.svg"
@@ -82,6 +83,15 @@
               </button>
             </div>
           </form>
+
+          <div style="visibility: hidden" class="error-line">
+            <img
+              src="/static/images/icons/login-icons/error.svg"
+              alt="error icon"
+              class="error-img"
+            />
+            <span class="error-message">Invalid game code provided</span>
+          </div>
         </div>
       </div>
     </div>

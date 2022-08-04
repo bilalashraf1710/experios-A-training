@@ -1,0 +1,388 @@
+#root {
+  background-image: url(../images/backgrounds/intro.svg);
+}
+
+#header1 {
+  margin-bottom: 0;
+  padding-top: 0em;
+  height: 0;
+}
+
+#content-body1 {
+  padding: 0;
+  margin-top: 0;
+  max-width: 73.125em;
+}
+
+.green {
+  color: #7ed321;
+  margin: 0.8em 0;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/********* SECTION *********/
+.section {
+  color: white;
+  background-color: rgb(17, 52, 70, 0.53);
+  backdrop-filter: blur(10px);
+  border: 1px solid #35515d;
+  border-radius: 10px;
+  padding: 2em;
+  margin: 0.5em;
+}
+
+.main-section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.paragraph {
+  font-size: 1.25em;
+  margin: 0;
+  padding-right: 4em;
+}
+
+/*** MAIN SECTION ***/
+
+/* Header Box */
+.head {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.heading {
+  font-size: 2.125em;
+}
+
+.header-box {
+  background-image: linear-gradient(to bottom, #263a44, #0e2634);
+  border: 1px solid #29444f;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  width: 11.375em;
+  padding: 0.5em 2em;
+  margin: 0.5em;
+}
+.box-red {
+  background-image: linear-gradient(to bottom, #5a1414, #f53b39);
+  border: 1px solid #f53b39;
+}
+
+.main-text {
+  font-size: 2em;
+  text-align: center;
+}
+.context-text {
+  font-size: 0.75em;
+  text-align: center;
+}
+
+/**** Intro & Evidence Paragraphs ****/
+.intro,
+.evidence {
+  margin-bottom: 4em;
+}
+
+/**** Audio Container ****/
+.audio-container {
+  background-color: #0e2634;
+  border: 1px solid #859ca9;
+  border-radius: 7px;
+  width: 21.8125em;
+  height: 9.6875em;
+  padding: 0.5em;
+  align-self: center;
+}
+
+.audio-heading {
+  margin: 1em;
+}
+
+.recording {
+  position: relative;
+  align-self: center;
+  margin: 1em;
+  padding: 0.5em;
+  width: 95%;
+  height: 100%;
+}
+
+.play-icon {
+  width: 3.0625em;
+  height: 3.0625em;
+  position: absolute;
+  top: 0px;
+  left: 8.375em;
+}
+
+.player-range {
+  accent-color: #f53b39;
+  width: 100%;
+  height: 0.375em;
+}
+
+.player-time {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 0.4em;
+}
+
+/**** EVIDENCE REPORT ****/
+.evidence-report {
+  align-self: center;
+  background-color: #0e2634;
+  border: 1px solid #859ca9;
+  border-radius: 7px;
+  padding: 0.7em 1em 1em 1em;
+  width: 21.8125em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-side,
+.right-side {
+  margin: auto 0.3em;
+}
+
+.left-side > .report-heading {
+  text-align: left;
+  margin-left: 0;
+  margin-top: 0.2em;
+}
+
+.right-side > .report-heading {
+  text-align: right;
+  margin-right: 0;
+  margin-top: 0.3em;
+}
+
+.report-heading {
+  font-size: 0.875em;
+  margin: 1em;
+}
+
+.report-flex {
+  background-color: #09161e;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  height: 10.625em;
+  width: 9.25em;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.left-image {
+  width: 4.3125em;
+  height: 5.4375em;
+  margin: 1em 2em;
+  margin-top: 0.5em;
+}
+
+.right-image {
+  width: 5.625em;
+  height: 5.9375em;
+  margin: 1em 2em;
+  margin-top: 0.5em;
+}
+
+/******** SECOND SECTION********/
+.second-section {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 100%;
+  /* height: 32.5625em; */
+}
+
+/**** THE LEFT Section  ****/
+.left-section {
+  /* height: 100%; */
+  width: 70%;
+  /* margin-right: 0.5em 0.5em 0 0; */
+  padding: 0.8em 2em;
+}
+
+/* .left-section > .green {
+  margin-bottom: 0;
+} */
+
+/* Select Option */
+.game-option {
+  width: 28.875em;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#game-info {
+  width: 100%;
+  height: 3.125em;
+  background-color: rgb(58, 78, 90, 0.43);
+  border: 1px solid #ffffff;
+  border-radius: 29px;
+  background: url(../images/icons/hints/arrow.svg) no-repeat right center fixed;
+  color: var(--eu-font-color-main);
+  padding-left: 0.9em;
+  padding-right: 0.9em;
+  font-size: 1em;
+  margin-left: 0;
+}
+
+option {
+  color: black;
+  width: 100%;
+  padding: 2.5px;
+}
+
+option:hover {
+  background-color: gray;
+}
+
+#game-info,
+.buttons {
+  margin: 0.5em 0 0.5em 0;
+}
+
+/* Buttons  */
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-size: 1em;
+  /* width: 46%; */
+  width: 13.5625em;
+  height: 3.625em;
+  margin: 5px;
+  border: transparent;
+  border-radius: 29px;
+}
+
+.btn-request {
+  background-image: linear-gradient(to bottom, #75838b, #3b4246);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.btn-submit {
+  background-image: linear-gradient(to bottom, #b4ec51, #377b1b);
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.btn-disabled {
+  background-color: rgb(44, 81, 103, 0.58);
+  background-image: none;
+}
+
+.hint-question {
+  font-size: 1.25em;
+}
+.lorem-container {
+  margin-top: 1.5em;
+  width: 100%;
+}
+
+.hint-lorem {
+  border: 1px solid #859ca9;
+  border-radius: 7px;
+  background-color: transparent;
+  padding: 0.8em;
+  margin: 0.5em auto;
+}
+
+/**** THE RIGHT Section  ****/
+.right-section {
+  /* width: 19.8125em; */
+  width: 30%;
+  height: 30.125em;
+}
+
+.right-section-h2 {
+  /* height: 32.5625em; */
+  height: 100%;
+}
+
+.info-box {
+  width: 15.25em;
+  height: 5.9375em;
+  margin: 2em auto;
+}
+
+.hint-context {
+  color: rgb(255, 255, 255, 0.7);
+  font-size: 0.875em;
+  text-align: center;
+}
+
+.hint-text {
+  color: rgb(255, 255, 255, 1);
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/******* Media Queries ********/
+
+@media screen and (max-width: 600px) {
+  #header1 {
+    justify-content: space-around;
+  }
+
+  .second-section {
+    flex-wrap: wrap;
+  }
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+  .left-section {
+    text-align: center;
+  }
+  .game-option {
+    width: 50%;
+    margin: auto;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .btn {
+    width: 100%;
+  }
+
+  .info-box {
+    width: 100%;
+  }
+}

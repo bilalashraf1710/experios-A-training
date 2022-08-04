@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="Group" transform="translate(0.5 0.5)">
+    <circle id="Oval_2_Copy" data-name="Oval 2 Copy" cx="24.5" cy="24.5" r="24.5" transform="translate(0 0)" fill="#f53b39" stroke="#ff6d6e" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Triangle" d="M7,0l7,13H0Z" transform="translate(32.5 17.5) rotate(90)" fill="#fff"/>
+  </g>
+</svg>

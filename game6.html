@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <title>Getting Started</title>
+
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Experios, Virtual Escape" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./static/stylesheets/main.css" />
+    <link rel="stylesheet" href="./static/stylesheets/hints.css" />
+    <link rel="stylesheet" href="./static/stylesheets/game.css" />
+  </head>
+
+  <body>
+    <div id="root">
+      <header id="header1">
+        <!-- Logos -->
+        <div class="flex-row logos">
+          <img
+            src="static/images/logos/experios.svg"
+            alt="Experios Logo"
+            class="inline-block logo1"
+          />
+          <img
+            src="static/images/logos/virtualescape.svg"
+            alt="Virtual Escape Logo"
+            class="inline-block logo2"
+          />
+        </div>
+
+        <!-- Info -->
+        <div class="flex-row infos">
+          <div class="inline-block info info1">
+            <img
+              src="static/images/icons/connection.svg"
+              alt="Online Connection Icon"
+              class="inline-block vertical-align"
+            />
+            <span class="inline-block context"> 6 CONNECTED </span>
+          </div>
+
+          <div class="inline-block info info2">
+            <img
+              src="static/images/icons/logout.svg"
+              alt="Exit Icon"
+              class="inline-block vertical-align"
+            />
+            <span class="inline-block context"> LOG OUT</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+        <div id="content-body1" class="contentbody1-background">
+            
+          <section class="section main-section main-section-width">
+            <header class="head">
+                <div class="heading"> GAME: TIME'S TICKING </div>
+                <div class="flex-row">
+                  <div class="header-box box-red">
+                    <span class="main-text"> 52:25 </span>
+                    <span class="context-text"> REMAINING</span>
+                  </div>
+      
+                  <div class="header-box">
+                    <span class="main-text"> 0 </span>
+                    <span class="context-text"> INCORRECT </span>
+                  </div>
+      
+                  <div class="header-box">
+                    <span class="main-text"> 1 </span>
+                    <span class="context-text"> HINTS </span>
+                  </div>
+                </div>
+            </header>
+
+            <div class="intro">
+              <div class="green">WIRES</div>
+              <br />
+              <p class="paragraph">
+                Great, the suitcase is open.
+              </p>
+            </div>
+
+            <div class="game-image game4">
+              <img src="/static/images/icons/game/image4.svg" alt="image 4" class="image4" />
+            </div>
+       
+            <div>
+              <p class="paragraph">
+                There's lots of wires and the squad isn't sure which ones they need to cut.
+                <br> <br>
+                But they are sure you've got the skills to find out the correct wires to cut.
+                Have a close look at the bomb and the steps in the bomb manual.
+              </p>
+            </div>
+          </section>
+
+
+          <section class="second-section">
+            <div class="section left-section">
+              <div class="green">THE CHALLENGE</div> <br />
+              <div class="hint-question"> 
+               Which 3 wires do the squad need to cut?
+              </div>
+              <br />
+
+              <div class="game-option">
+                <div class="checkbox">
+                  <label for="W14" class="box-container"> W14
+                    <input type="checkbox" id="W14" name="wires" value="W14">    
+                    <span class="r-checkmark"></span>  
+                  </label>
+                
+                  <label for="W19" class="box-container"> W19
+                    <input type="checkbox" id="W19" name="wires" value="W19" checked>    
+                    <span class="r-checkmark"></span>  
+                  </label>
+                
+                  <label for="W21" class="box-container"> W21
+                    <input type="checkbox" id="W21" name="wires" value="W21">    
+                    <span class="r-checkmark"></span>  
+                  </label>
+                    
+                  <label for="W23" class="box-container"> W23
+                    <input type="checkbox" id="W23" name="wires" value="W23">    
+                    <span class="r-checkmark"></span>  
+                  </label>
+
+                  <label for="W43" class="box-container"> W43
+                    <input type="checkbox" id="W43" name="wires" value="43">    
+                    <span class="r-checkmark"></span>  
+                  </label>
+                  
+                  <label for="W59" class="box-container"> W59
+                    <input type="checkbox" id="W59" name="wires" value="59">    
+                    <span class="r-checkmark"></span>  
+                  </label>
+
+                  <label for="W64" class="box-container"> W64
+                    <input type="checkbox" id="W64" name="wires" value="W64" checked>    
+                    <span class="r-checkmark"></span>  
+                  </label>
+                
+                  <label for="W71" class="box-container"> W71
+                    <input type="checkbox" id="W71" name="wires" value="W71">    
+                    <span class="r-checkmark"></span>  
+                  </label>
+
+                  <label for="W81" class="box-container"> W81
+                    <input type="checkbox" id="W81" name="wires" value="W81">    
+                    <span class="r-checkmark"></span>  
+                  </label>
+                </div>
+                
+                <div class="buttons">
+                  <button type="button" class="btn btn-request"> 
+                    <a href=""> REQUEST HINT </a>
+                  </button>
+                  <button type="button" class="btn btn-submit">
+                    <a href="game7.html"> SUBMIT ANSWER </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+              
+            <div class="section right-section">
+              <div class="header-box info-box ">
+                <span class="hint-context"> NEXT HINT AVAILABLE </span>
+                <span class="hint-text"> NOW </span> 
+              </div>
+              <div class="header-box info-box">
+                <span class="hint-context"> HINT PENALTY </span>
+                <span class="hint-text"> -30s </span> 
+              </div>
+              <div class="header-box info-box">
+                <span class="hint-context"> INCORRECT ANSWER PENALTY </span>
+                <span class="hint-text"> -30s </span> 
+              </div>
+            </div>
+          </section>
+      </div>
+
+    </div>
+  </body>
+</html>
