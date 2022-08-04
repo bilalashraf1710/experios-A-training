@@ -6,7 +6,10 @@
 }
 
 #content-body1 {
-  margin-top: 12em;
+  /* margin-top: 12em; */
+  position: absolute;
+  top: 70%;
+  padding-bottom: 1.75em;
 }
 
 .content .heading {
@@ -20,10 +23,15 @@
   margin: 5px;
 }
 
+.content {
+  padding-bottom: 0.7em;
+}
+
 .form1 {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  margin-bottom: 1.356em;
 }
 
 form div {
@@ -52,7 +60,7 @@ form div {
 .text-field input[type="text"]:focus-visible {
   box-shadow: 0 0 5px white;
   background-color: transparent;
-  outline: transparent;
+  /* outline: transparent; */
 }
 
 ::placeholder {
@@ -89,4 +97,27 @@ button.submitBtn1 img {
 
 .submitBtn1:hover {
   cursor: pointer;
+}
+
+.error-img {
+  width: 2.06em;
+  height: 2.06em;
+  vertical-align: middle;
+}
+
+.error-message {
+  color: #f53b39;
+  font-size: 1.25em;
+  margin-left: 0.7em;
+  vertical-align: sub;
+}
+
+@media screen and (max-width: 600px) {
+  #content-body1 {
+    top: 20vh;
+    height: auto;
+  }
+  form div {
+    width: 100%;
+  }
 }

@@ -96,18 +96,28 @@
           </div>
 
           <div class="modal">
-            <div>
+            <div class="error-line">
               <img
                 src="/static/images/icons/login-icons/error.svg"
                 alt="error icon"
-                class="error"
+                class="error-img"
               />
-              <span> Something went wrong </span>
+              <span class="error-msg"> Something went wrong </span>
             </div>
-            <p>
+            <p class="error-desc">
               This is error text line number 1 <br />
-              And more error text And more error text
+              And more error text <br />
+              <span style="display: none">And more error text.</span>
             </p>
+
+            <div class="err-buttons">
+              <button type="button" class="error-btn error-cancel">
+                Cancel
+              </button>
+              <button type="button" class="error-btn error-continue">
+                <a href="intro.html"> Continue </a>
+              </button>
+            </div>
           </div>
         </div>
       </div>

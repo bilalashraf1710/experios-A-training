@@ -246,10 +246,10 @@
 }
 
 .box-container .r-checkmark::after {
-  left: 0.45em;
+  left: 0.5em;
   top: 0.1em;
-  width: 2.3px;
-  height: 5.65px;
+  width: 0.2313em;
+  height: 0.7781em;
   border: solid white;
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);

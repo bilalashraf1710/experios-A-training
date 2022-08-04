@@ -10,7 +10,8 @@
 }
 
 .content {
-  padding-bottom: 4.5em;
+  padding-top: 0.5em;
+  padding-bottom: 6.5em;
 }
 
 .content-text {
@@ -60,4 +61,82 @@
 .active {
   background: url(../images/icons/menu/Mask1.svg) no-repeat center center;
   background-size: 100%;
+}
+
+.modal {
+  width: 46.0625em;
+  position: absolute;
+  top: 26%;
+  background-color: rgb(1, 5, 7, 0.6);
+  border-radius: 7px;
+  backdrop-filter: blur(30px);
+  border: 1px solid #35515d;
+  padding: 1.5em 2em 3em 2em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.error-line {
+  padding-left: 0.5em;
+}
+.error-img {
+  width: 2.8125em;
+  height: 2.8125em;
+  vertical-align: middle;
+}
+.error-msg {
+  color: #f53b39;
+  font-size: 1.25em;
+  vertical-align: sub;
+  margin-left: 5px;
+}
+
+.error-desc {
+  color: white;
+  font-size: 2.25em;
+  margin-top: 0.7em;
+  margin-bottom: 1.65em;
+}
+
+.err-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.error-btn {
+  width: 40%;
+  height: 3.625em;
+  font-size: 1.125em;
+  color: white;
+  background-image: linear-gradient(to bottom, #75838b, #3b4246);
+  border-radius: 29px;
+  border: transparent;
+  margin: 0.7em;
+}
+
+.error-continue {
+  background-image: var(--eu-button-linear-gradient-r);
+}
+
+@media screen and (max-width: 600px) {
+  .modal {
+    width: 80%;
+    top: 25vh;
+    height: fit-content;
+    align-items: center;
+  }
+
+  .err-buttons {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .error-btn {
+    width: 50%;
+  }
 }
