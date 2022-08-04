@@ -6,7 +6,6 @@
 }
 
 #content-body1 {
-  /* margin-top: 12em; */
   position: absolute;
   top: 70%;
   padding-bottom: 1.75em;
@@ -60,7 +59,6 @@ form div {
 .text-field input[type="text"]:focus-visible {
   box-shadow: 0 0 5px white;
   background-color: transparent;
-  /* outline: transparent; */
 }
 
 ::placeholder {
